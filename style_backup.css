@@ -1,0 +1,762 @@
+/* ==========================
+   三洋警備保障株式会社
+   style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    background:#f5f8fc;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ---------- Header ---------- */
+header{
+    padding:10px 0;
+}
+
+
+.header-inner{
+    width:1100px;
+    max-width:95%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.license{
+    font-size:13px;
+    color:#777;
+}
+
+.logo h1{
+    color:#003b75;
+    font-size:46px;
+}
+
+.tel{
+    text-align:right;
+}
+
+.tel p{
+    color:#003b75;
+    margin-bottom:8px;
+}
+
+.tel h2{
+    color:#003b75;
+    font-size:38px;
+}
+
+/* ---------- Menu ---------- */
+
+nav{
+    background:#003b75;
+}
+
+nav ul{
+
+    width:1100px;
+    max-width:95%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-around;
+}
+
+nav li{
+
+    padding:18px 0;
+
+}
+
+nav a{
+
+    color:white;
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:#ffd65a;
+
+}
+
+/* ---------- Hero ---------- */
+
+
+.hero{
+
+    width:100%;
+
+    height:600px;
+
+    background-image:
+
+    linear-gradient(
+
+        rgba(255,255,255,0.20),
+
+        rgba(255,255,255,0.20)
+
+    ),
+
+    url("../images/hero/kyoto.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-text{
+
+    text-align:center;
+
+}
+
+
+.hero h2{
+
+    font-size:60px;
+
+    color:#003b75;
+
+    margin-bottom:30px;
+
+}
+.hero p{
+
+    font-size:24px;
+
+    line-height:2;
+
+    margin-bottom:40px;
+
+
+}
+
+.button{
+
+    display:inline-block;
+
+    background:#ff9800;
+
+    color:white;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+.button:hover{
+
+    background:#ff7f00;
+
+}
+/*==========================
+業務内容
+==========================*/
+
+.business{
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.business h2{
+    text-align: center;
+    font-size: 42px;
+    color: #003b75;
+}
+
+.business-sub{
+    text-align: center;
+    color: #666;
+    margin: 20px 0 50px;
+}
+
+{
+    width: 1100px;
+    max-width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.card{
+    background:#f8fbff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    overflow:hidden;   /* ←追加 */
+}
+
+.card img{
+    width:100%;
+    height:250px;      /* ←追加 */
+    object-fit:cover;  /* ←追加 */
+    display:block;     /* ←追加 */
+    border-radius:15px;
+}
+
+.card h3{
+    margin: 20px 0;
+    
+    color: #003b75;
+    font-size: 28px;
+}
+
+.card p{
+    line-height: 1.8;
+}
+
+.card-button{
+    display: inline-block;
+    margin-top: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+/*=====================
+採用情報
+======================*/
+
+.recruit-hero{
+
+width:1100px;
+max-width:95%;
+margin:60px auto;
+
+}
+
+.recruit-hero img{
+
+width:100%;
+display:block;
+height:auto;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+position:relative;
+z-index:1;
+
+}
+
+.recruit-message{
+
+width:1100px;
+max-width:95%;
+margin:60px auto;
+text-align:center;
+
+}
+
+.recruit-message h2{
+
+color:#003b75;
+font-size:42px;
+
+}
+
+.recruit-message p{
+
+font-size:22px;
+line-height:2;
+margin-top:30px;
+
+}
+
+.recruit-warning{
+
+width:900px;
+max-width:95%;
+margin:60px auto;
+background:#fff5f5;
+padding:40px;
+border-radius:20px;
+
+}
+
+.recruit-warning h2{
+
+color:#d60000;
+text-align:center;
+margin-bottom:30px;
+
+}
+
+.recruit-warning li{
+
+font-size:22px;
+margin:20px 0;
+
+}
+
+.recruit-contact{
+
+text-align:center;
+margin:80px auto;
+
+}
+
+.recruit-contact h2{
+
+color:#003b75;
+
+}
+
+.recruit-contact p{
+
+font-size:22px;
+margin:25px;
+
+}
+
+/*=========================
+新着情報
+=========================*/
+
+.news-page{
+
+width:1100px;
+max-width:95%;
+margin:70px auto;
+
+}
+
+.news-page h2{
+
+text-align:center;
+font-size:48px;
+color:#003b75;
+margin-bottom:20px;
+
+}
+
+.news-sub{
+
+text-align:center;
+font-size:20px;
+color:#666;
+margin-bottom:50px;
+
+}
+
+.news-list{
+
+background:#fff;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+overflow:hidden;
+
+}
+
+.news-item{
+
+display:flex;
+align-items:center;
+padding:25px 30px;
+border-bottom:1px solid #e5e5e5;
+
+}
+
+.news-item:last-child{
+
+border-bottom:none;
+
+}
+
+.news-date{
+
+width:150px;
+font-weight:bold;
+color:#003b75;
+
+}
+
+.news-item p{
+
+margin:0;
+font-size:18px;
+
+}
+
+/*=========================
+お問い合わせ
+=========================*/
+
+.contact-page{
+
+width:900px;
+max-width:95%;
+margin:70px auto;
+
+}
+
+.contact-page h2{
+
+text-align:center;
+font-size:48px;
+color:#003b75;
+
+}
+
+.contact-copy{
+
+text-align:center;
+font-size:28px;
+line-height:1.8;
+color:#003b75;
+margin:40px 0;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:50px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.contact-box h3{
+
+text-align:center;
+
+font-size:34px;
+
+color:#003b75;
+
+margin-bottom:40px;
+
+}
+
+.contact-box table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.contact-box th{
+
+width:180px;
+
+background:#003b75;
+
+color:white;
+
+padding:18px;
+
+}
+
+.contact-box td{
+
+padding:18px;
+
+border-bottom:1px solid #ddd;
+
+line-height:1.8;
+
+}
+
+.contact-message{
+
+margin-top:40px;
+
+text-align:center;
+
+font-size:22px;
+
+font-weight:bold;
+
+color:#ff6600;
+
+}
+
+/*=========================
+代表者ごあいさつ
+=========================*/
+
+.greeting-page{
+
+    width:1100px;
+    max-width:95%;
+    margin:80px auto;
+
+}
+
+.greeting-page h2{
+
+    text-align:center;
+    font-size:48px;
+    color:#003b75;
+    margin-bottom:60px;
+
+}
+
+.greeting-box{
+
+    display:flex;
+    gap:60px;
+    align-items:flex-start;
+
+}
+
+.greeting-image{
+
+    width:48%;
+    text-align:center;
+
+}
+
+.greeting-image img{
+
+    width:100%;
+    display:block;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.greeting-text{
+
+    width:60%;
+    font-size:20px;
+    line-height:2.2;
+
+}
+
+.greeting-text h4{
+
+    font-size:40px;
+    color:#003b75;
+    margin-bottom:40px;
+    line-height:1.5;
+
+}
+
+.greeting-text p{
+
+    margin-bottom:30px;
+
+}
+
+.recruit-contact{
+
+    position:relative;
+    z-index:100;
+
+}
+
+.recruit-contact a{
+
+    position:relative;
+    z-index:101;
+    cursor:pointer;
+
+}
+
+/* ==========================
+   スマホ対応（レスポンシブ）
+========================== */
+@media screen and (max-width:768px){
+
+/* ヘッダー */
+.header-inner{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.logo h1{
+    font-size:24px;
+    line-height:1.3;
+}
+
+.license{
+    font-size:12px;
+}
+
+.tel{
+    text-align:center;
+}
+
+.tel h2{
+    font-size:22px;
+}
+
+/* メニュー */
+nav ul{
+    flex-wrap:wrap;
+}
+
+nav li{
+    width:50%;
+    text-align:center;
+    padding:12px 0;
+}
+
+/* トップ画像 */
+.hero{
+    height:350px;
+}
+
+.hero h2{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.button{
+    font-size:16px;
+    padding:12px 25px;
+}
+
+/* 業務内容 */
+.business{
+    padding:50px 0;
+}
+
+.business h2{
+    font-size:30px;
+}
+
+.business-list{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:200px;
+}
+
+.card h3{
+    font-size:24px;
+}
+
+/* 代表者ごあいさつ */
+.greeting-box{
+    flex-direction:column;
+}
+
+.greeting-image,
+.greeting-text{
+    width:100%;
+}
+
+.greeting-page h2{
+    font-size:32px;
+}
+
+.greeting-text h4{
+    font-size:28px;
+}
+
+.greeting-text{
+    font-size:18px;
+}
+
+/* 採用情報 */
+.recruit-message h2{
+    font-size:30px;
+}
+
+.recruit-message p{
+    font-size:18px;
+}
+
+.recruit-warning{
+    padding:25px;
+}
+
+.recruit-warning li{
+    font-size:18px;
+}
+
+/* 新着情報 */
+.news-page h2{
+    font-size:32px;
+}
+
+.news-item{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.news-date{
+    width:auto;
+    margin-bottom:8px;
+}
+
+/* お問い合わせ */
+.contact-page h2{
+    font-size:32px;
+}
+
+.contact-copy{
+    font-size:20px;
+}
+
+.contact-box{
+    padding:20px;
+}
+
+.contact-box table,
+.contact-box tbody,
+.contact-box tr,
+.contact-box th,
+.contact-box td{
+    display:block;
+    width:100%;
+}
+
+.contact-box th{
+    margin-top:15px;
+}
+
+.contact-message{
+    font-size:18px;
+}
+
+}
