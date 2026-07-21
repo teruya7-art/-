@@ -579,7 +579,13 @@ tr:nth-child(even){
 
 .content-box{
 
-    padding:25px;
+    padding:0;
+
+}
+
+.content-box:first-child{
+
+    padding:0;
 
 }
 
@@ -611,16 +617,32 @@ footer{
 
 }
 
-.recruit-top-image{
+.recruit-image-wrap{
 
-    width:115%;
-
-    max-width:none;
-
-    margin-left:-7.5%;
-
-    margin-bottom:30px;
+    margin:-25px -25px 30px;
 
 }
 
+.recruit-top-image{
+
+    width:100%;
+
+    display:block;
+
+    margin:0;
+
+    max-width:none;
+
+    border-radius:0;
+
+}
+}
+.recruit-box{
+    padding:0 0 25px;
+}
+
+.recruit-box h3,
+.recruit-box table{
+    margin-left:25px;
+    margin-right:25px;
 }
