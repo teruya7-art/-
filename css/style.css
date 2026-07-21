@@ -141,7 +141,7 @@ header{
 }
 
 .hero-overlay{
-    background:rgba(255,255,255,0.82);
+    background:rgba(255,255,255,0.50);
     backdrop-filter:blur(3px);
     padding:30px 40px;
     border-radius:20px;
@@ -608,6 +608,18 @@ table{
 footer{
 
     padding:40px 20px;
+
+}
+
+.recruit-top-image{
+
+    width:115%;
+
+    max-width:none;
+
+    margin-left:-7.5%;
+
+    margin-bottom:30px;
 
 }
 
