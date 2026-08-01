@@ -132,7 +132,7 @@ header{
 
 .hero{
     position:relative;
-    background:url("../images/hero/kyoto.png") center center / cover no-repeat;
+    background:url("../images/hero/kyoto-pc.png") center center / cover no-repeat;
     min-height:600px;
     display:flex;
     justify-content:center;
@@ -460,15 +460,17 @@ tr:nth-child(even){
 /* ---------- トップ画像 ---------- */
 
 .hero{
+    background-image:url("../images/hero/kyoto-sp.png");
 
-    min-height:700px;
+    height:420px;
 
     padding:40px 15px;
 
-    background-position:center 22%;
+    background-position:center top;
 
     background-size:cover;
 
+    background-repeat:no-repeat;
 }
 
 /* ---------- 白いボックス ---------- */
