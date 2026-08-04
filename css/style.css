@@ -118,12 +118,7 @@ header{
 }
 
 .menu-toggle{
-    display:block;
-    color:#fff;
-    font-size:2rem;
-    text-align:center;
-    padding:15px 20px;
-    cursor:pointer;
+    display:none;
 }
 
 /*-----------------------------------------
