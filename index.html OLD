@@ -7,12 +7,41 @@
 
     <title>三洋警備保障株式会社</title>
 
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style_v2.css">
 </head>
 
 <body>
 
 <header>
+
+    <div class="header-inner">
+
+        <!-- 左側 -->
+        <div class="header-left">
+
+            <div class="license-row">
+
+                <img src="images/logo/police-mark.png"
+                     alt="京都府公安委員会認定"
+                     class="police-mark">
+
+                <span class="license">
+                    京都府公安委員会認定　第61000227号
+                </span>
+
+            </div>
+
+            <h1>三洋警備保障株式会社</h1>
+
+            <p class="english-name">
+                Sanyo Security Guard
+            </p>
+
+        </div>
+
+        <!-- 右側 -->
+
+ <header>
 
 <div class="header-inner">
 
@@ -21,9 +50,10 @@
 
         <div class="license-row">
 
-            <img src="images/logo/police-mark.png"
-                 alt="京都府公安委員会認定"
-                 class="police-mark">
+            <img
+                src="images/logo/police-mark.png"
+                alt="京都府公安委員会認定"
+                class="police-mark">
 
             <span class="license">
                 京都府公安委員会認定　第61000227号
@@ -31,7 +61,9 @@
 
         </div>
 
-        <h1>三洋警備保障株式会社</h1>
+        <h1>
+            三洋警備保障株式会社
+        </h1>
 
         <p class="english-name">
             Sanyo Security Guard
@@ -42,9 +74,10 @@
     <!-- 中央 -->
     <div class="header-center">
 
-        <img src="images/logo/sanyo-logo.png"
-             alt="三洋警備保障株式会社"
-             class="company-logo">
+        <img
+            src="images/logo/sanyo-logo.png"
+            alt="三洋警備保障株式会社"
+            class="company-logo">
 
     </div>
 
@@ -52,11 +85,15 @@
     <div class="header-right">
 
         <div class="tel-number">
+
             ☎075-645-3400
+
         </div>
 
         <div class="tel-info">
+
             24時間受付・年中無休
+
         </div>
 
     </div>
@@ -68,7 +105,7 @@
 <nav class="navbar">
 
     <ul class="nav-menu" id="nav-menu">
-        <li><a href="index_v3.html">ホーム</a></li>
+        <li><a href="index.html">ホーム</a></li>
         <li><a href="business.html">業務内容</a></li>
         <li><a href="greeting.html">代表者ご挨拶</a></li>
         <li><a href="office.html">本部事業所案内</a></li>
