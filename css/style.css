@@ -49,13 +49,27 @@ header{
     box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
+/* ===========================
+   ヘッダー（PC版）
+=========================== */
+
+header{
+
+    background:#fff;
+
+    border-bottom:4px solid #0f5fa8;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
 .header-inner{
 
     max-width:1200px;
 
-    margin:0 auto;
+    margin:auto;
 
-    padding:5px 30px;
+    padding:12px 30px;
 
     display:flex;
 
@@ -65,32 +79,104 @@ header{
 
 }
 
-.logo h1{
-    font-size:2rem;
-    color:#0f5fa8;
-    margin-top:5px;
+.logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.license-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.police-mark{
+
+    width:42px;
+
 }
 
 .license{
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
     color:#0f5fa8;
-    font-size:1.3rem;
-    font-weight:700;
-    letter-spacing:1px;
+
 }
 
-.tel{
-    text-align:right;
+.logo h1{
+
+    margin:0;
+
+    font-size:2.3rem;
+
+    color:#0f5fa8;
+
+    line-height:1.1;
+
 }
 
-.tel p{
+.english-name{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    color:#0f5fa8;
+
+}
+
+.header-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:4px;
+
+}
+
+.company-logo{
+
+    width:300px;
+
+    height:auto;
+
+}
+
+.tel-info{
+
+    margin:0;
+
     color:#666;
-    font-size:.9rem;
+
+    font-size:.95rem;
+
 }
 
-.tel h2{
-    margin-top:4px;
+.tel-number{
+
+    margin:0;
+
     color:#d62828;
-    font-size:2rem;
+
+    font-size:2.2rem;
+
 }
 
 /*-----------------------------------------
@@ -717,13 +803,13 @@ footer{
 /* 三洋ロゴ */
 .company-logo{
 
-    width:360px;
+    width:320px;
 
     height:auto;
 
     display:block;
 
-    margin:0 auto 5px;
+    margin:0;
 
 }
 
@@ -790,5 +876,21 @@ footer{
     margin:0;
 
     font-size:2.6rem;
+
+}
+
+/* 右側ヘッダー */
+
+.header-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    justify-content:center;
+
+    gap:5px;
 
 }
