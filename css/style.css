@@ -50,12 +50,19 @@ header{
 }
 
 .header-inner{
-    width:min(1200px,95%);
-    margin:auto;
-    padding:12px 0;
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:15px 30px;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
 }
 
 .logo h1{
@@ -65,8 +72,10 @@ header{
 }
 
 .license{
-    color:#666;
-    font-size:.9rem;
+    color:#0f5fa8;
+    font-size:1.3rem;
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 .tel{
@@ -685,13 +694,13 @@ footer{
 .license-row{
     display:flex;
     align-items:center;
-    gap:10px;
-    margin-bottom:8px;
+    gap:16px;
+    margin-bottom:12px;
 }
 
 /* 公安委員会マーク */
 .police-mark{
-    width:42px;
+    width:68px;
     height:auto;
     flex-shrink:0;
 }
@@ -707,10 +716,10 @@ footer{
 
 /* 三洋ロゴ */
 .company-logo{
-    width:220px;
+    width:500px;
     height:auto;
-    margin-bottom:10px;
-    margin-left:auto;
+    display:block;
+    margin:0 auto 15px;
 }
 
 /* 会社名 */
@@ -732,4 +741,58 @@ footer{
 
 .tel h2{
     margin-top:6px;
+}
+
+/* 右側 */
+
+.header-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ロゴ */
+
+.company-logo{
+
+    width:400px;
+
+    height:auto;
+
+    margin-bottom:10px;
+
+}
+
+/* 電話 */
+
+.tel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:4px;
+
+}
+
+.tel p{
+
+    margin:0;
+
+}
+
+.tel h2{
+
+    margin:0;
+
+    font-size:2.6rem;
+
 }
