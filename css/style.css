@@ -230,6 +230,10 @@ header{
 
 }
 
+.menu-toggle{
+    display:none;
+}
+
 .nav-menu{
 
     width:min(1300px,96%);
@@ -247,7 +251,44 @@ header{
 .nav-menu li{
 
     flex:1;
+    position:relative;
+    min-height:54px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
+}
+
+.office-links{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:stretch;
+    background:#0f5fa8;
+    border-radius:8px;
+    overflow:hidden;
+    min-height:54px;
+}
+
+.office-links a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    padding:10px 8px;
+    line-height:1.2;
+    text-align:center;
+    color:#fff;
+    transition:.3s;
+}
+
+.office-links a span{
+    display:block;
+}
+
+.office-links a:hover{
+    background:rgba(255,255,255,.08);
 }
 
 .nav-menu a{
@@ -272,6 +313,36 @@ header{
 
     background:#0a4a86;
 
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:220px;
+    background:#0f5fa8;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    border-radius:0 0 8px 8px;
+    overflow:hidden;
+    z-index:10;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+.dropdown-menu li{
+    flex:none;
+}
+
+.dropdown-menu a{
+    padding:12px 15px;
+    text-align:left;
+}
+
+.dropdown-menu a:hover{
+    background:#0a4a86;
 }
 
 
