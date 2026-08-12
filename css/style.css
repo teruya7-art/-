@@ -138,7 +138,7 @@ header{
 
     color:#0f5fa8;
 
-    font-size:2.5rem;
+    font-size:3.6rem;
 
     line-height:1.15;
 
@@ -880,5 +880,235 @@ footer{
     padding:40px 20px;
 
 }
+
+}
+
+/* ==================================================
+   TOPページ ヘッダー修正版
+   ================================================== */
+
+/* 白いヘッダー */
+/* ==================================================
+   TOPページ ヘッダー 強調版
+   ================================================== */
+
+.header-inner {
+    width: min(1300px, 96%);
+    margin: auto;
+
+    min-height: 145px;
+    padding: 15px 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* 公安委員会認定・会社名 */
+.header-left {
+    flex: 1;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.header-left .license-row {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.header-left .license {
+    color: #222;
+    font-size: 1.55rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.header-left h1 {
+    margin: 5px 0 0;
+
+    color: #0f5fa8;
+
+    font-size: 4.8rem;
+    white-space: nowrap;
+}
+
+/* 警察マークを表示しない */
+.header-left .police-mark {
+    display: none;
+}
+
+
+/* 右側：企業ロゴ・電話番号 */
+.header-right {
+    width: 310px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+/* 企業ロゴ */
+.header-right .company-logo {
+    width: 360px;
+    height: auto;
+
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+/* 電話番号 */
+.header-right .tel-number {
+    color: #0f5fa8;
+
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+
+/* 24時間受付 */
+.header-right .tel-info {
+    margin-top: 3px;
+
+    color: #555;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ヒーロー部分
+   背景イラストとテキストボックスは残す
+   ========================================= */
+
+.hero-overlay {
+    width: min(760px, 90%);
+
+    background: rgba(255, 255, 255, 0.50);
+
+    backdrop-filter: blur(4px);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+
+    box-sizing: border-box;
+}
+
+.hero-overlay h2 {
+    color: #0f5fa8;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero-overlay p {
+    font-size: 1.15rem;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   スマートフォン
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .header-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .header-left {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        order: 1;
+    }
+
+    .header-left .license {
+        font-size: 0.95rem;
+    }
+
+    .header-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-right {
+        width: 100%;
+        order: 2;
+        align-items: center;
+    }
+
+    .header-right .company-logo {
+        width: 210px;
+    }
+
+    .header-right .tel-number {
+        font-size: 1.5rem;
+    }
+
+    .header-right .tel-info {
+        font-size: 0.85rem;
+    }
+
+    .hero-overlay {
+        width: 94%;
+        padding: 25px 18px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.9rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+}
+
+/* ===== TOPページ・ヘッダーロゴ最終調整 ===== */
+.header-right .company-logo {
+    width: 360px !important;
+    height: auto !important;
+    max-width: none !important;
+}
+
+/* ===== PC版ヘッダー：企業ロゴを強調 ===== */
+@media (min-width: 769px) {
+
+    .header-right {
+        width: 380px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .header-right .company-logo {
+        width: 360px !important;
+        max-width: none !important;
+        height: auto !important;
+        flex-shrink: 0 !important;
+        display: block !important;
+    }
 
 }
