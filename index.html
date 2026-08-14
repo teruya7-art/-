@@ -54,6 +54,8 @@
 
 <nav class="navbar">
 
+    <div class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">☰</div>
+
     <ul class="nav-menu" id="nav-menu">
         <li><a href="index.html">ホーム・認定証</a></li>
         <li><a href="business.html">業務内容</a></li>
@@ -77,14 +79,29 @@
             確かな技術と誠実な対応で地域の安全を支えます。
         </p>
 
-        <a href="contact.html" class="button">
-            お問い合わせはこちら
-        </a>
+        <div class="contact-cta">
+            <p class="contact-kicker">ご応募・お問い合わせはお気軽に！</p>
+            <a href="contact.html" class="button">
+                <span class="contact-icon" aria-hidden="true">✉</span>
+                <span class="contact-text">お問い合わせはこちら</span>
+                <span class="contact-arrow" aria-hidden="true">›</span>
+            </a>
+            <p class="contact-cta-note">ご不明な点がございましたら、お電話またはメールにてお気軽にお問い合わせください。</p>
+        </div>
 
     </div>
 
 
 </section>
+
+<!-- スマートフォン版：イラスト下のお問い合わせボタン -->
+<div class="mobile-contact-area">
+    <a href="contact.html" class="button mobile-contact-button">
+        <span class="contact-icon" aria-hidden="true">✉</span>
+        <span class="contact-text">お問い合わせはこちら</span>
+        <span class="contact-arrow" aria-hidden="true">›</span>
+    </a>
+</div>
 
 <!-- 公安委員会認定証 -->
 <section class="certificate" style="padding:28px 15px 56px;">

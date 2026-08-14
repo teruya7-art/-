@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="office-page">
 
 <header>
 
@@ -43,7 +43,7 @@
 
 <nav class="navbar">
 
-<div class="menu-toggle">☰</div>
+<div class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">☰</div>
 
 <ul class="nav-menu">
 
@@ -80,7 +80,7 @@
 <img
 src="images/office/office-illustration.png"
 alt="三洋警備保障株式会社 事業所外観"
-style="max-width:700px;margin:0 auto 30px;display:block;border-radius:15px;">
+class="content-photo office-photo">
 
 <h3>警備本部事務所</h3>
 
@@ -247,15 +247,21 @@ style="max-width:700px;margin:0 auto 30px;display:block;border-radius:15px;">
 
 <br>
 
-<p style="text-align:center;">
+<div class="contact-cta">
+
+<p class="contact-kicker">ご応募・お問い合わせはお気軽に！</p>
 
 <a href="contact.html" class="contact-button">
 
-お問い合わせはこちら
+<span class="contact-icon" aria-hidden="true">✉</span>
+<span class="contact-text">お問い合わせはこちら</span>
+<span class="contact-arrow" aria-hidden="true">›</span>
 
 </a>
 
-</p>
+<p class="contact-cta-note">ご不明な点がございましたら、お電話またはメールにてお気軽にお問い合わせください。</p>
+
+</div>
 
 </div>
 

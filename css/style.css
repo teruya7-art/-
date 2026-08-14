@@ -228,6 +228,10 @@ header{
 
     background:#0f5fa8;
 
+    position:relative;
+
+    z-index:20;
+
 }
 
 .menu-toggle{
@@ -414,29 +418,135 @@ header{
 
 }
 
-.button{
+.contact-cta{
 
-    display:inline-block;
+    max-width:560px;
 
-    background:#d62828;
+    margin:0 auto;
 
-    color:#fff;
-
-    padding:18px 48px;
-
-    border-radius:50px;
-
-    font-weight:bold;
-
-    font-size:1.1rem;
-
-    transition:.3s;
+    text-align:center;
 
 }
 
+.contact-kicker{
+
+    display:block;
+
+    margin:0 0 14px;
+
+    color:#0f5fa8;
+
+    font-size:0.95rem;
+
+    font-weight:700;
+
+    letter-spacing:0.04em;
+
+}
+
+.contact-button,
+.button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+    max-width:560px;
+
+    margin:0 auto;
+
+    padding:18px 26px 18px 20px;
+
+    border:1px solid rgba(255,182,73,0.9);
+
+    border-radius:999px;
+
+    background:linear-gradient(135deg, #ffc55a 0%, #ff9d2f 35%, #f57d00 100%);
+
+    color:#fff;
+
+    font-weight:700;
+
+    font-size:1.08rem;
+
+    box-shadow:0 0 0 4px rgba(255,203,125,0.18), 0 12px 24px rgba(220,123,32,0.18);
+
+    transition:filter .25s ease, transform .25s ease, box-shadow .25s ease;
+
+}
+
+.contact-button:hover,
 .button:hover{
 
-    background:#b71c1c;
+    filter:brightness(1.06);
+
+    transform:translateY(-1px);
+
+    box-shadow:0 0 0 4px rgba(255,203,125,0.22), 0 15px 28px rgba(220,123,32,0.22);
+
+}
+
+.contact-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:34px;
+
+    height:34px;
+
+    flex-shrink:0;
+
+    border:2px solid rgba(255,255,255,0.75);
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.08);
+
+    font-size:1.15rem;
+
+    line-height:1;
+
+}
+
+.contact-text{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.contact-arrow{
+
+    flex-shrink:0;
+
+    font-size:2rem;
+
+    line-height:1;
+
+    margin-left:8px;
+
+    transform:translateY(-1px);
+
+}
+
+.contact-cta-note{
+
+    margin-top:12px;
+
+    color:#666;
+
+    font-size:0.92rem;
+
+    line-height:1.8;
 
 }
 
@@ -634,6 +744,25 @@ header{
 
 }
 
+.content-photo,
+.office-photo{
+
+    display:block;
+
+    width:100%;
+
+    max-width:700px;
+
+    height:auto;
+
+    margin:0 auto 30px;
+
+    border-radius:15px;
+
+    box-sizing:border-box;
+
+}
+
 /*=========================
  テーブル
 =========================*/
@@ -822,9 +951,69 @@ footer{
 
 /* Navigation */
 
+.navbar{
+
+    position:relative;
+
+    z-index:30;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    margin:auto;
+
+    padding:14px 18px;
+
+    text-align:center;
+
+    color:#fff;
+
+    font-size:1.8rem;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    background:#0f5fa8;
+
+}
+
 .nav-menu{
 
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    right:0;
+
+    display:none;
+
     flex-direction:column;
+
+    width:100%;
+
+    margin:0;
+
+    background:#0f5fa8;
+
+    z-index:40;
+
+}
+
+.nav-menu.show{
+
+    display:flex;
 
 }
 
@@ -832,17 +1021,31 @@ footer{
 
     width:100%;
 
+    min-height:auto;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
 }
 
 .nav-menu a{
 
-    border-top:1px solid rgba(255,255,255,.2);
+    display:block;
+
+    padding:14px 18px;
+
+    border-top:none;
+
+    text-align:left;
 
 }
 
 /* Hero */
 
 .hero{
+
+    position:relative;
+
+    z-index:1;
 
     min-height:480px;
 
@@ -858,19 +1061,49 @@ footer{
 
     padding:40px 15px;
 
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 28%, rgba(255,255,255,0.02) 100%);
+
+    z-index:0;
+
 }
 
 .hero-overlay{
 
+    position:relative;
+
+    z-index:2;
+
     width:95%;
 
-    padding:30px 20px;
+    padding:20px;
+
+    background:transparent;
 
 }
 
 .hero-overlay h2{
 
+    position:relative;
+
+    z-index:3;
+
     font-size:2rem;
+
+    margin-bottom:15px;
+
+    color:#0f5fa8;
 
 }
 
@@ -879,6 +1112,10 @@ footer{
     font-size:1rem;
 
     line-height:1.8;
+
+    color:#333;
+
+    text-align:center;
 
 }
 
@@ -927,6 +1164,33 @@ footer{
 .content-box{
 
     padding:25px;
+
+    margin:0 auto 40px;
+
+}
+
+.content-box img,
+.recruit-top-image,
+.recruit-image-wrap img,
+.content-box > img,
+.content-photo,
+.office-photo{
+
+    display:block;
+
+    width:100%;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:0 auto 24px;
+
+    border-radius:15px;
+
+    object-fit:contain;
+
+    box-sizing:border-box;
 
 }
 
@@ -1068,7 +1332,7 @@ footer{
 .hero-overlay {
     width: min(760px, 90%);
 
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.34);
 
     backdrop-filter: blur(4px);
 
@@ -1182,4 +1446,167 @@ footer{
         display: block !important;
     }
 
+}
+
+/* =========================================
+   スマホ版TOPページ 最終調整
+   PC版には影響しない
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* スマホ版は完成済みのkyoto-sp.pngをそのまま表示 */
+    .hero {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        padding: 0;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    /* HTML側の重複文字を非表示 */
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+
+    .hero-overlay h2,
+    .hero-overlay > p {
+        display: none;
+    }
+
+    /* 「ご応募・お問い合わせはお気軽に！」も画像内にあるため非表示 */
+    .contact-kicker {
+        display: none;
+    }
+
+    /* ボタンだけ画像下部の専用スペースに配置 */
+    .contact-cta {
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 82%;
+        max-width: 560px;
+        margin: 0;
+        z-index: 5;
+    }
+
+    /* 問い合わせボタンのデザインは現在のまま */
+    .contact-cta .button {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* 画像内にすでに説明文があるため非表示 */
+    .contact-cta-note {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+   
+}
+
+/* =========================================
+   スマートフォン版：イラスト下のお問い合わせボタン
+   PC版には影響させない
+   ========================================= */
+
+.mobile-contact-area {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ヒーロー内部の既存お問い合わせボタンをスマホでは非表示 */
+   .hero .contact-cta {
+    display: none;
+}
+
+.office-page .contact-cta {
+    display: none !important;
+}
+
+.recruit-page .contact-cta {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 560px;
+    margin: 20px auto 0;
+}
+
+    /* イラスト直下・認定証直前のボタン */
+    .mobile-contact-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* イラスト最下部の白い部分に重ねる */
+    margin-top: -55px;
+    position: relative;
+    z-index: 10;
+
+    padding: 18px 20px 28px;
+    background: transparent;
+}
+
+    .mobile-contact-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 560px;
+        min-height: 68px;
+        box-sizing: border-box;
+        padding: 0 22px;
+        border-radius: 40px;
+        background: linear-gradient(90deg, #ffb43b, #ff8a00);
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.15rem;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .mobile-contact-button .contact-icon {
+        width: 36px;
+        height: 36px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .mobile-contact-button .contact-text {
+        flex: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .mobile-contact-button .contact-arrow {
+        font-size: 2rem;
+        line-height: 1;
+        flex-shrink: 0;
+    }
+
+    /* 認定証との間隔を自然に調整 */
+    .mobile-contact-area + .certificate {
+        padding-top: 10px !important;
+    }
 }
