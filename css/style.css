@@ -1149,6 +1149,29 @@ footer{
 
 /* Common */
 
+/* スマホ版・電話ボタン */
+.phone-button{
+    display:block;
+    width:100%;
+    max-width:420px;
+    margin:25px auto 15px;
+    padding:18px 15px;
+    box-sizing:border-box;
+    background:#d62828;
+    color:#fff !important;
+    text-align:center;
+    text-decoration:none;
+    font-size:1.6rem;
+    font-weight:bold;
+    border-radius:14px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.18);
+}
+
+.phone-button:active{
+    transform:scale(0.97);
+    background:#b71c1c;
+}
+
 .page-title{
 
     padding:45px 20px;
