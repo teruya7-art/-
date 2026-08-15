@@ -1610,3 +1610,21 @@ footer{
         padding-top: 10px !important;
     }
 }
+
+
+/* ===== スマホ版「最新のお知らせ」表 ===== */
+
+@media screen and (max-width: 768px) {
+
+    .news-table {
+        display: table !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        table-layout: fixed !important;
+    }
+
+}
